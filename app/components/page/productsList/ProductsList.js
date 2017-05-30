@@ -1,83 +1,63 @@
 /**
  * Created by YUN on 26/05/2017.
  */
-
-
 import React from 'react';
+import Reflux from 'reflux';
+import ProductStore from '../../../stores/ProductStore';
+import ProductActions  from '../../../actions/ProductActions';
 import { Card, WingBlank, WhiteSpace } from 'antd-mobile';
 import { Link } from 'react-router-dom';
 
-// import ProductStore from '../../stores/ProductStore';
-
-
-class ProductsList extends React.Component {
+class ProductsList extends Reflux.Component {
     constructor(props) {
         super(props);
-        // this.store = ProductStore;
+        this.store = ProductStore;
 
     }
 
-    // shouldComponentUpdate() {
-    //     console.log('shouldComponentUpdate');
-    //     console.log('e2',this.state.productsList);
-    //     return true;
-    // }
-    //
-    // componentDidMount(){
-    //     ProductStore.getAllProducts();
-    //     console.log('e',this.state.productsList);
-    // }
+    componentWillMount()
+    {
+
+        console.log('1:componentWillMount');
+        super.componentWillMount();
+    }
+
+    componentDidMount(){
+
+        ProductActions.getAllProducts();
+        console.log('3:componentDidMount',this.state.productsList);
+
+    }
+
+    shouldComponentUpdate() {
+        console.log('4:shouldComponentUpdate',this.state.productsList);
+        return true;
+    }
+
+    componentWillUnmount(){
+        console.log('5:componentWillUnmount',this.state.productsList);
+        super.componentWillMount();
+    }
 
 
     render() {
-        const products = [
-            {
-                id:'1',
-                productName:'Premium Infant Formula',
-                img_url:'https://www.kanabelle.com.au/static/team/2016/1019/14768365756335.jpg',
-            },
-            {
-                id:'2',
-                productName:'Premium Follow-on Formula',
-                img_url:'https://www.kanabelle.com.au/static/team/2016/1019/14768365939634.jpg',
-            },
-            {
-                id:'3',
-                productName:'Toddler Nutritious Milk Drink ',
-                img_url:'https://www.kanabelle.com.au/static/team/2016/1019/14768366091173.jpg',
-            },
-            {
-                id:'4',
-                productName:'Instant Full Cream Milk Powder ',
-                img_url:'https://www.kanabelle.com.au/static/team/2016/1018/14767651501004.jpg',
-            },
-            {
-                id:'5',
-                productName:'Nutritional Formula For Children',
-                img_url:'https://www.kanabelle.com.au/static/team/2016/1019/14768434138624.jpg',
-            },
-            {
-                id:'6',
-                productName:'Nutritional Formula For Pregnant Mother ',
-                img_url:'https://www.kanabelle.com.au/static/team/2016/1018/14767650796278.jpg',
-            },
-            {
-                id:'7',
-                productName:'Nutritional Formula For Elderly',
-                img_url:'https://www.kanabelle.com.au/static/team/2016/1018/14767650649086.jpg',
-            },
-        ];
+        const products = this.state.productsList;
+        console.log('2:render----products',products);
+
         return (
             <div>
-                <h1>我是产品列表页面</h1>
-                {products === null &&
-                <h1>No Products</h1>
+                <h1>我是产品列表页面 {this.state.test}</h1>
+                {!products &&
+                <h1>No book</h1>
                 }
-                {products.map((product,index)=>{
+
+                {products &&
+                products.map((product,index)=>{
+                    let id = product.fakeId;
                     return (
                         <WingBlank key={index}>
                             <WhiteSpace/>
-                            <Link to={'/products/'+product.id}>
+                            <Link to={'/products/'+id}>
                                 <Card>
                                     <Card.Header
                                         title={product.productName}
@@ -96,8 +76,8 @@ class ProductsList extends React.Component {
                             <WhiteSpace/>
                         </WingBlank>
                     )
-
-                })}
+                })
+                }
 
             </div>
         )

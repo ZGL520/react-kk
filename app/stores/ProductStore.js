@@ -12,7 +12,7 @@ class ProductStore extends Reflux.Store {
         super();
         this.state = {
             productsList:null,
-            test:'aaa'
+            test:'bbb'
         };
         this.listenToMany(ProductActions);
     }
@@ -20,10 +20,10 @@ class ProductStore extends Reflux.Store {
     getAllProducts() {
         ProductsUtil.fetchAllProducts()
             .then( (response) =>{
-                console.log('log,',response);
                 this.setState({
                     productsList:response
                 });
+                console.log('log,',this.state.productsList);
             });
 
     }

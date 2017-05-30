@@ -3,6 +3,6 @@
  */
 
 import Reflux from'reflux';
-const Actions = Reflux.createActions(['getAllProducts','getProduct']);
+const ProductActions = Reflux.createActions(['getAllProducts','getProduct']);
 
-export default Actions;
+export default ProductActions;
