@@ -2,10 +2,10 @@
  * Created by YUN on 3/05/2017.
  */
 
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 require('./index.css');
-var App = require('./components/App')
+import App from'./components/App';
 
 ReactDOM.render(
     <App/>,

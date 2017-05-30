@@ -1,9 +1,9 @@
 /**
- * Created by Eliteimac3 on 25/05/2017.
+ * Created by YUN on 25/05/2017.
  */
-var React = require('react');
+import React from 'react';
 import { List, NavBar  } from 'antd-mobile';
-var Link =require('react-router-dom').Link;
+import { Link } from 'react-router-dom'
 
 const Item = List.Item;
 
@@ -72,4 +72,4 @@ class Header extends React.Component {
     }
 }
 
-module.exports = Header;
+export default Header;

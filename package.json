@@ -40,6 +40,8 @@
     "axios": "^0.16.1",
     "deep-freeze": "0.0.1",
     "expect": "^1.20.2",
+    "natty-fetch": "^2.4.2",
+    "natty-storage": "^2.0.2",
     "prop-types": "^15.5.8",
     "query-string": "^4.3.4",
     "react": "^15.5.4",

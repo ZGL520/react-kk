@@ -1,34 +1,34 @@
-var React = require('react');
-var ReactRouter = require('react-router-dom');
-var Router = ReactRouter.BrowserRouter;
-var Route = ReactRouter.Route;
-var Switch = ReactRouter.Switch;
-
-// antd组件
+/**
+ * Created by YUN on 25/05/2017.
+ */
 
 
-var Header = require('./Header');
-var Footer = require('./Footer');
-var Homepage = require('./page/HomePage');
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Homepage from './page/homePage/HomePage';
+import AboutUs from './page/aboutUs/AboutUs';
+import ContactUs from './page/contactUs/ContactUs';
+import Login from './page/login/Login';
+import ProductsList from './page/productsList/ProductsList';
+import ShoppingCart from './page/shoppingCart/ShoppingCart';
+import MyAccount from'./page/myAccount/MyAccount';
+import EditPersonalInfo from'./page/editPersonalInfo/EditPersonalInfo';
+import EditAddress from './page/editAddress/EditAddress';
+import CheckOut from'./page/checkOut/CheckOut';
+import OrderInformation from './page/orderInfo/OrderInformation';
+import UnpaidOrder from'./page/unpaidOrder/UnpaidOrder';
 
 
 // 四种不同产品的简介
-var InfantFormula = require('./page/InfantFormula');
-var NutritionalFormula = require('./page/NutritionalFormula');
-var FullCreamMilk = require('./page/FullCreamMilk');
-var UhtMilk = require('./page/UhtMilk');
-var ProductsList = require('./page/ProductsList');
-var AboutUs = require('./page/AboutUs');
-var ContactUs = require('./page/ContactUs');
-var Login = require('./page/Login');
-var Product= require('./page/Products');
-var ShoppingCart= require('./page/ShoppingCart');
-var MyAccount= require('./page/MyAccount');
-var OrderInformation= require('./page/OrderInformation');
-var CheckOut= require('./page/CheckOut');
-var EditPersonalInfo= require('./page/EditPersonalInfo');
-var EditAddress= require('./page/EditAddress');
-var UnpaidOrder= require('./page/UnpaidOrder');
+import InfantFormula from './page/infantFormula/InfantFormula';
+import FullCreamMilk from'./page/fullCreamMilk/FullCreamMilk';
+import NutritionalFormula from './page/nutritionalFormula/NutritionalFormula';
+import UhtMilk from './page/uhtMilk/UhtMilk';
+import Product from './page/productsDetailPage/ProductDetail';
+
+
 
 class App extends React.Component {
     render() {
@@ -49,6 +49,8 @@ class App extends React.Component {
                         <Route path ='/products/:id' component={Product} />
                         <Route path ='/shoppingCart' component={ShoppingCart} />
                         <Route path ='/myAccount' component={MyAccount} />
+
+
                         <Route path ='/orderInfo' component={OrderInformation} />
                         <Route path ='/checkOut' component={CheckOut} />
                         <Route path ='/editPersonalInfo' component={EditPersonalInfo} />
@@ -71,4 +73,4 @@ class App extends React.Component {
     }
 }
 
-module.exports = App;
+export default App;
