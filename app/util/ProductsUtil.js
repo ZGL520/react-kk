@@ -5,11 +5,15 @@
 import axios from 'axios';
 const url = 'http://rest.learncode.academy/api/yuncrystal/products';
 
+
+function fetchAllProducts() {
+    return axios.get(url)
+        .then((response) => {
+            return response.data;
+        });
+}
+
+
 export default {
-    fetchAllProducts:function() {
-        return axios.get(url)
-            .then((response) => {
-                return response.data;
-            });
-    }
+    fetchAllProducts
 }
