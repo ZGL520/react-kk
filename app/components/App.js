@@ -35,7 +35,7 @@ class App extends React.Component {
         return (
             <Router>
                 <div>
-                    <Header/>
+                    {/*<Header/>*/}
                     <Switch>
                         <Route exact path ='/' component={Homepage} />
                         <Route path ='/infant_formula' component={InfantFormula} />
@@ -64,7 +64,7 @@ class App extends React.Component {
                         }}/>
                     </Switch>
 
-                    <Footer/>
+                    {/*<Footer/>*/}
 
                 </div>
             </Router>

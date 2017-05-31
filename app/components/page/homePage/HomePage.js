@@ -5,6 +5,14 @@ import React from 'react';
 import { Flex, WhiteSpace,WingBlank } from 'antd-mobile';
 import { Link } from 'react-router-dom';
 
+const HHeader = require('./src/js/header');
+const AAds = require('./src/js/ads');
+const PProductList = require('./src/js/project_list');
+const AAbout = require('./src/js/about');
+const FFootNav = require('./src/js/footnav');
+const FFooter = require('./src/js/footer');
+const LoginUp = require('./src/js/loginup');
+
 function PlaceHolder(props) {
     return (
         <div
@@ -31,9 +39,18 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                <WingBlank>
-                <h1>This is HomePage</h1>
-                <Flex>
+                {/*<WingBlank>*/}
+                {/*<h1>This is HomePage</h1>*/}
+
+                <HHeader/>
+                {/*<LoginUp/>*/}
+                <AAds/>
+                <PProductList/>
+                <AAbout/>
+                <FFootNav/>
+                <FFooter/>
+
+              {/*  <Flex>
                     <Flex.Item>
                         <PlaceHolder to='/infant_formula'>
                             INFANT FORMULA
@@ -58,7 +75,7 @@ class HomePage extends React.Component {
                         </PlaceHolder>
                     </Flex.Item>
                 </Flex>
-                </WingBlank>
+                </WingBlank>*/}
             </div>
         )
     }
