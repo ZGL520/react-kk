@@ -1,0 +1,136 @@
+.loginup{
+    width: 85%;
+    margin: 100px auto;
+    border:1px solid grey;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+}
+.signin{
+    margin-bottom: 100px;
+}
+.signin>form>p:nth-child(1){
+    width: 90%;
+    margin: 10px auto;
+    font-size: 300%;
+    text-align: center;
+    color: #2D3B96;
+    font-weight: bold;
+
+}
+.signin>form>p:nth-child(2){
+    width: 90%;
+    margin: 10px auto;
+    font-size: 200%;
+    text-align: center;
+}
+
+.signin>form>input:nth-child(3){
+    display: block;
+    width: 90%;
+    height: 80px;
+    margin: 20px auto;
+    border:1px solid #8bc53f;
+    border-radius: 10px;
+    font-size: 300%;
+    padding-left:80px;
+}
+.signin>form>input:nth-child(4){
+    display: block;
+    width: 90%;
+    height: 80px;
+    margin: 20px auto;
+    border:1px solid green;
+    border-radius: 10px;
+    font-size: 300%;
+    padding-left:80px;
+}
+.signin>form>input:nth-child(5){
+    display: block;
+    width: 90%;
+    height: 80px;
+    margin: 30px auto;
+    border:1px solid green;
+    border-radius: 10px;
+    font-size: 300%;
+    text-align: center;
+    background-color: #8bc53f;
+    font-weight: bold;
+    color: white;
+}
+.checkbox{
+    width: 90%;
+    margin:20px auto;
+    display: flex;
+}
+.checkbox>input{
+    width: 40px;
+    height: 40px;
+}
+.checkbox>span{
+    font-size: 250%;
+    margin-left:20px;
+}
+.signin>form>a:nth-child(7){
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 300%;
+    text-align: center;
+}
+
+
+
+
+.register{
+    margin-bottom: 100px;
+}
+.register>form>p:nth-child(1){
+    width: 30%;
+    margin: 10px auto;
+    font-size: 300%;
+    text-align: center;
+    color: #2D3B96;
+    font-weight:bold;
+
+}
+.register>form>p:nth-child(2){
+    width: 90%;
+    margin: 10px auto;
+    font-size: 200%;
+    text-align: center;
+}
+
+.register>form>input:nth-child(3){
+    display: block;
+    width: 90%;
+    height: 80px;
+    margin: 20px auto;
+    border:1px solid green;
+    border-radius: 10px;
+    font-size: 300%;
+    padding-left:80px;
+}
+.register>form>input:nth-child(4){
+    display: block;
+    width: 90%;
+    height: 80px;
+    margin: 20px auto;
+    border:1px solid green;
+    border-radius: 10px;
+    font-size: 300%;
+    padding-left:80px;
+}
+.register>form>input:nth-child(5){
+    display: block;
+    width: 90%;
+    height: 80px;
+    margin: 30px auto;
+    border:1px solid green;
+    border-radius: 10px;
+    font-size: 300%;
+    text-align: center;
+    background-color: #8bc53f;
+    font-weight: bold;
+    color: white;
+}
+

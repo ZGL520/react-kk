@@ -1,0 +1,89 @@
+.about{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 20px auto 10px auto;
+}
+.about_kanabell_tit{
+    text-align: right;
+}
+.about_kanabell_tit>p{
+    color: #29aae1;
+    font-size: 500%;
+    margin:0;
+}
+.about_kanabell_info{
+    background-color: #29aae1;
+    padding: 10px;
+}
+.about_kanabell_info>img{
+    max-width: 100%;
+    margin: 0;
+    float: left;
+}
+.about_kanabell_info>p{
+    margin: 0;
+    margin-top: 25px;
+    width:100%;
+    display: block;
+    font-size: 500%;
+    word-break: break-all;
+    color: white;
+}
+.about_pic>img{
+    display: block;
+    width: 100%;
+}
+
+.about_kan_address_tip{
+    text-align: right;
+}
+.about_kan_address_tip>p{
+    color: #8bc53f;
+    font-size: 500%;
+    margin: 0;
+}
+.about_kan_address_info{
+    background-color: #8bc53f;
+    padding: 10px;
+}
+.about_kan_address_info>img{
+    max-width: 100%;
+    margin: 0;
+    float: left;
+}
+.about_kan_address_info>p{
+    margin: 0;
+    margin-top: 25px;
+    width:100%;
+    display: block;
+    font-size: 500%;
+    word-break: break-all;
+    color: white;
+}
+.about_kan_safe_tit{
+    text-align: right;
+}
+.about_kan_safe_tit>p{
+    color: #293b8f;
+    font-size: 500%;
+    margin:0;
+}
+.about_kan_safe_info{
+    background-color: #293b8f;
+    padding: 10px;
+}
+.about_kan_safe_info>img{
+    max-width: 100%;
+    margin: 0;
+    float: left;
+}
+.about_kan_safe_info>p{
+    margin: 0;
+    margin-top: 25px;
+    width:100%;
+    display: block;
+    font-size: 500%;
+    word-break: break-all;
+    color: white;
+}
