@@ -12,7 +12,7 @@ class LoginUp extends React.Component{
                         <p>Pleace sign-in using your existing account</p>
                         <input type="username" placeholder="username"/>
                         <input type="password" placeholder="password"/>
-                        <input type="sublin" value='Sign in'/>
+                        <input type="submit" value='Sign in'/>
                         <div className="checkbox">
                             <input type="checkbox"/>
                             <span>Remember me</span>

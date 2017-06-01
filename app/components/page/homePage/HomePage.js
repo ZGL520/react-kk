@@ -43,7 +43,7 @@ class HomePage extends React.Component {
                 {/*<h1>This is HomePage</h1>*/}
 
                 <HHeader/>
-                {/*<LoginUp/>*/}
+                <LoginUp/>
                 <AAds/>
                 <PProductList/>
                 <AAbout/>
