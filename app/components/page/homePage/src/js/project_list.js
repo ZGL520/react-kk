@@ -2,12 +2,15 @@ import React from 'react';
 require('../css/productList.css');
 class ProductList extends React.Component{
     render(){
+      const pic = {
+        url1 : './app/components/page/homePage/src/images/infant-small-min.png'
+      }
         return(
             <div>
                 <ul className="product">
                     <li>
                             <div className="product_photo">
-                                <img src="./app/components/page/homePage/src/images/infant-small-min.png" alt="aa"/>
+                                <img src={pic.url1} alt="aa"/>
                             </div>
                             <div className="product_name">
                                 <p>INFANT FORMULA</p>
@@ -18,7 +21,7 @@ class ProductList extends React.Component{
                     </li>
                     <li>
                             <div className="product_photo">
-                                <img src="./app/components/page/homePage/src/images/infant-small-min.png" alt="aa"/>
+                                <img src={pic.url1} alt="aa"/>
                             </div>
                             <div className="product_name">
                                 <p>INFANT FORMULA</p>
@@ -29,7 +32,7 @@ class ProductList extends React.Component{
                     </li>
                     <li>
                             <div className="product_photo">
-                                <img src="./app/components/page/homePage/src/images/infant-small-min.png" alt="aa"/>
+                                <img src={pic.url1} alt="aa"/>
                             </div>
                             <div className="product_name">
                                 <p>INFANT FORMULA</p>
@@ -40,7 +43,7 @@ class ProductList extends React.Component{
                     </li>
                     <li>
                             <div className="product_photo">
-                                <img src="./app/components/page/homePage/src/images/infant-small-min.png" alt="aa"/>
+                                <img src={pic.url1} alt="aa"/>
                             </div>
                             <div className="product_name">
                                 <p>INFANT FORMULA</p>

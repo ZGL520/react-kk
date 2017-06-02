@@ -41,9 +41,8 @@ class HomePage extends React.Component {
             <div>
                 {/*<WingBlank>*/}
                 {/*<h1>This is HomePage</h1>*/}
-
                 <HHeader/>
-                <LoginUp/>
+                {/*<LoginUp/>*/}
                 <AAds/>
                 <PProductList/>
                 <AAbout/>

@@ -3,10 +3,15 @@ import React from 'react';
 require('../css/footnav.css');
 class FootNav extends React.Component{
     render(){
+      const pic = {
+        url1 : './app/components/page/homePage/src/images/foot-logo.jpg',
+        url2 : './app/components/page/homePage/src/images/group-106.png',
+        url3 : './app/components/page/homePage/src/images/group-108.png'
+      }
         return(
             <div>
                 <div className="foot_nav_logo">
-                    <img src="./app/components/page/homePage/src/images/foot-logo.jpg" alt=""/>
+                    <img src={pic.url1} alt=""/>
                 </div>
                 <div className="nav">
                     <ul>
@@ -18,8 +23,8 @@ class FootNav extends React.Component{
                     </ul>
                 </div>
                 <div className="foot_nav_link">
-                    <a href=""><img src="./app/components/page/homePage/src/images/group-106.png" alt=""/></a>
-                    <a href=""><img src="./app/components/page/homePage/src/images/group-108.png" alt=""/></a>
+                    <a href=""><img src={pic.url2} alt=""/></a>
+                    <a href=""><img src={pic.url3} alt=""/></a>
                 </div>
             </div>
         )
